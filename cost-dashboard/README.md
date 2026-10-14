@@ -2,6 +2,8 @@
 
 Real-time token, cost, context and rate-limit dashboard for the Claude Code statusline.
 
+![Cost Dashboard running in a Claude Code session](./docs/preview.png)
+
 ```
 🕐 02:07 PM · S $39.32 (39.3M) · Today $526.65 (665.0M) · All $1954.88 (3323.0M) · Ctx [███░░░░░░░░░] 27% (267.2k/1.0M)
 Session [██░░░░░░] 29% (↻1h 57m) Weekly [██░░░░░░] 25% (↻thu 08:07 · left 00-17)

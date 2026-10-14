@@ -2,6 +2,8 @@
 
 Claude Code plugins built and maintained by [Koder SpA](https://koderspa.com).
 
+![Cost Dashboard running in a Claude Code session](./cost-dashboard/docs/preview.png)
+
 ## Install
 
 ```
