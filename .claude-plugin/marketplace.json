@@ -1,0 +1,21 @@
+{
+  "name": "koderspa",
+  "owner": {
+    "name": "Koder SpA",
+    "url": "https://koderspa.com"
+  },
+  "metadata": {
+    "description": "Claude Code mods by Koder SpA",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cost-dashboard",
+      "source": "./cost-dashboard",
+      "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline.",
+      "version": "1.0.0",
+      "category": "observability",
+      "keywords": ["statusline", "cost", "tokens", "usage", "rate-limits"]
+    }
+  ]
+}
