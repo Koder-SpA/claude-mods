@@ -1,9 +1,8 @@
 {
   "name": "cost-dashboard",
   "displayName": "Cost Dashboard",
-  "version": "1.1.0",
-  "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline, plus a clickable inventory band above the prompt: press Skills, MCP or Plugins to list what this session actually has.",
-  "types": "./types/index.d.ts",
+  "version": "1.0.1",
+  "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline. Aggregates every session transcript: current session, today and all-time spend, context usage bar, 5h and weekly plan limits, cache hit ratio, active model and effort, skill/MCP/plugin counts and git status.",
   "author": {
     "name": "Koder SpA",
     "url": "https://koderspa.com"
@@ -18,9 +17,6 @@
     "usage",
     "observability",
     "rate-limits",
-    "dashboard",
-    "skills",
-    "mcp",
-    "plugins"
+    "dashboard"
   ]
 }

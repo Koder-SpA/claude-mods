@@ -16,7 +16,7 @@ Then install any plugin from the list below.
 
 | Plugin | What it does |
 |---|---|
-| [`cost-dashboard`](./cost-dashboard) | Real-time token, cost, context and rate-limit dashboard in the statusline, plus a clickable Skills / MCP / Plugins inventory band above the prompt |
+| [`cost-dashboard`](./cost-dashboard) | Real-time token, cost, context and rate-limit dashboard in the statusline |
 
 ```
 /plugin install cost-dashboard@koderspa

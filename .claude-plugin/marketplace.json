@@ -6,16 +6,16 @@
   },
   "metadata": {
     "description": "Claude Code mods by Koder SpA",
-    "version": "1.1.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "cost-dashboard",
       "source": "./cost-dashboard",
-      "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline, plus a clickable Skills/MCP/Plugins inventory band above the prompt.",
-      "version": "1.1.0",
+      "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline.",
+      "version": "1.0.1",
       "category": "observability",
-      "keywords": ["statusline", "cost", "tokens", "usage", "rate-limits", "skills", "mcp", "plugins"]
+      "keywords": ["statusline", "cost", "tokens", "usage", "rate-limits"]
     }
   ]
 }
