@@ -50,6 +50,24 @@ S $39.32 (39.3M) · Today $526.65 (665.0M) · All $1954.88 (3323.0M) · Ctx [█
 
 Sections with no data disappear instead of rendering placeholders — `⚡` and `🧠` only appear when active, and limits are omitted when the account exposes none (API-key billing, for example).
 
+## Inventory band
+
+An **inventory band** is drawn directly above the prompt. It holds three pressable counters — `Skills N`, `MCP N` and `Plugins N` — plus a `↻` refresh control.
+
+The statusline itself is plain text and cannot be clicked on any surface. That is a Claude Code constraint, not a bug in this plugin. The band above the prompt is the clickable surface, so the counters that used to be read-only text in the statusline are now pressable there.
+
+- **Skills** lists every skill the session lists, each with its source (`userSettings`, `plugin`, `built-in`, `mcp`, …) and the providing plugin when it has one.
+- **MCP** lists the connected MCP servers with their tool count. Press a server row to expand its tool names.
+- **Plugins** lists the enabled plugins with their marketplace and skill count. Press a plugin row to expand the skills it provides.
+
+Keyboard: while the band holds the focus, `s`, `m` and `p` open the Skills, MCP and Plugins lists. Focus the band with ctrl+x tab, or click it. Collapse the band with ctrl+x ctrl+a. `close` dismisses the open list and `more` pages through long lists.
+
+The lists come from the engine itself (the session's context breakdown) for skills and MCP tools, and from `enabledPlugins` in the user and project settings for plugins. The inventory is read at session start, refreshed on demand with `↻`, and re-read when it is older than a minute.
+
+The `/inventory` slash command opens the band on the Skills list and prints the three counts.
+
+This part of the plugin is a hooks module, so it needs a Claude Code build that loads plugin hooks modules. The statusline works on its own regardless.
+
 ## How it works
 
 Claude Code passes a JSON payload to the statusline command on every render. Live values — context window, rate limits, cache stats, model, effort — come straight from that payload.
