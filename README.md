@@ -17,9 +17,11 @@ Then install any plugin from the list below.
 | Plugin | What it does |
 |---|---|
 | [`cost-dashboard`](./cost-dashboard) | Real-time token, cost, context and rate-limit dashboard in the statusline |
+| [`task-router`](./task-router) | Delegates each sub-task to the right model and effort for your plan |
 
 ```
 /plugin install cost-dashboard@koderspa
+/plugin install task-router@koderspa
 ```
 
 ## License

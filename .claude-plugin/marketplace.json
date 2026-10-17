@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Claude Code mods by Koder SpA",
-    "version": "1.0.1"
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -15,7 +15,28 @@
       "description": "Real-time token, cost, context and rate-limit dashboard in the Claude Code statusline.",
       "version": "1.0.1",
       "category": "observability",
-      "keywords": ["statusline", "cost", "tokens", "usage", "rate-limits"]
+      "keywords": [
+        "statusline",
+        "cost",
+        "tokens",
+        "usage",
+        "rate-limits"
+      ]
+    },
+    {
+      "name": "task-router",
+      "source": "./task-router",
+      "description": "Delegates each sub-task to the right model and effort for your Claude plan. Detects Max, Pro or API and routes accordingly.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": [
+        "router",
+        "subagents",
+        "delegation",
+        "effort",
+        "context",
+        "cost"
+      ]
     }
   ]
 }

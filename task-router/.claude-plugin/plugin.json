@@ -1,0 +1,21 @@
+{
+  "name": "task-router",
+  "displayName": "Task Router",
+  "version": "1.0.0",
+  "description": "Delegates each sub-task to the right model and effort for your plan. Detects your Claude plan (Max, Pro, API) and injects a matching routing table at session start: cheap workers locate and extract, stronger ones edit and implement. Four worker agents, one routing skill, no enforcement hooks and no blocked tool calls.",
+  "author": {
+    "name": "Koder SpA",
+    "url": "https://koderspa.com"
+  },
+  "homepage": "https://github.com/Koder-SpA/claude-mods",
+  "repository": "https://github.com/Koder-SpA/claude-mods",
+  "license": "MIT",
+  "keywords": [
+    "router",
+    "subagents",
+    "delegation",
+    "effort",
+    "context",
+    "cost"
+  ]
+}
