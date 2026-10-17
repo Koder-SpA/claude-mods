@@ -46,6 +46,24 @@ reasoning.
 
 This outranks delegation. The cheapest worker is still more expensive than `rg`.
 
+## Delegation is not free
+
+A worker pays a fixed startup cost before it does any work: its system prompt and the
+schemas for every tool it can use. Measured on this mod's own smoke test, a `scout` run
+that made two tool calls and returned four lines of output burned about 30k tokens in
+the worker's window.
+
+So the question is not "is this a search?" but:
+
+> Will the material the worker reads for me cost more than starting the worker?
+
+Delegating a grep you already know how to write loses. Delegating a sweep across a
+directory you have not seen wins, and wins more the larger the sweep. Between those,
+prefer inline: you can always delegate the follow-up once you know the work is big.
+
+This is the honest version of the policy. A router that claims every delegation saves
+money is selling something.
+
 ## The table
 
 The session-start hook injects the table for your detected plan. The presets:

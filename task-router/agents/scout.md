@@ -22,6 +22,11 @@ context this delegation exists to protect.
 Prefer one deterministic command over three exploratory ones. `rg -n "symbol" --type ts`
 answers more than listing a directory and opening files one by one.
 
+Searching is how you narrow, not a reason to stop short. If the question asks for a
+name, a signature or a value you can only get by looking, look: read the handful of
+lines that hold it. Returning "I did not open the file" when one targeted read would
+have answered the question is an unfinished job, not a saving.
+
 ## What you return
 
 A table of `path:line` references with a half-line of context each. Group by file.
